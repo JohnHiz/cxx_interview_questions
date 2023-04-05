@@ -25,7 +25,8 @@ and the *code* is in the form of prodecures (often known as methods).
 Many of the most widely used programming languages are multi-paradigm and they support Object-oriented programming to a greater or lesser degree,
 typically in combination with *imperative* and *procedural programming*.
 
-**Main principles:**
+#### Main principles
+
 1. **Encapsulation.** This is principle states that all important information is contained inside an object and only select (public) information is exposed.
     The implementation and state of each object are privetly help inside a defined class. Other objects do not have access to this class or the
     authority to make changes. The are only able to call a list of public functions or methods.
@@ -44,7 +45,7 @@ typically in combination with *imperative* and *procedural programming*.
 *big-O notation*, which is a way of expressing the upper bound of an algorithm's running time. Big-O notation describes the complexity of an algorithm in terms
 of the number of operations it needs to perform. For example, an algorithm with a complexity of **O(n)** means that it will take `n` operations to complete.
 
-**Types of an algorithm complexity:**
+#### Types of an algorithm complexity
 
 * **O(1):** Accessing a particular element in an collection, which requires only one operation.
 * **O(log n):** Binary search algorithm, which is more efficient that linear search by dividing the list in half with each iteration. 
@@ -56,17 +57,83 @@ of the number of operations it needs to perform. For example, an algorithm with 
 
 ## 3. What if code is working incorrectly?
 
+#### If my code is working incorrectly I will
+
+1. **Check the code:** Review my code to make sure that the logic is correct and that I am not inadvertenly introducing any bugs.
+2. **Use a Debugger:** Use a debugger to step throught my code and pinpoint the exact line where the issue is occuring.
+3. **Use a Memory Profiler:** Use a memory profiler to check for the memory leaks and other issues that can cause incorrect behavior.
+4. **Use Logs:** Logging can help me understand the path of my code and the values of variables at each step.
+5. **Test my code:** Test my code with different input to ensure that it is behaving as expected.
+* ***Run the Programm in a different environment:** Maybe it may help to investigate the problem to try to run the programm on different version of
+Linux/Windows/MacOS.*
+
 ## 4. What are the Stack and Queue?
+
+#### Stack
+
+A **Stack** is a data structure that stores data in a `Last In First Out (LIFO)` format. This means that the last item added to the stack will be
+the first item removed. The main advantage of a stack is that it is easy to implement and requires less memory compared to a queue. A stack
+also provides faster access to the most recently added item, compared to queue.
+
+#### Queue
+
+A **Queue** is a data structure that store data in a `First In First Out (FIFO)` format. This means that the first item added to the queue will be
+the first item removed. The main advantage of a queue is thst is allows for more complex operations than a stack, suck as adding and removing
+multiple items in a single operation.
+
+The main difference between a stack and queue is the order in which items are removed form the data structure and complexity of each other.
 
 ## 5. What names of the Programming Books have you read?
 
+1. The C++ Programming Language - *Bjarne Stroustrup*
+2. The C++ Programming Language - *Stephen Prata*
+
 ## 6. New features in C++17 and C++20
+
+#### Features of the C++17
+
+1. Structured bindings
+2. If statements with initializer
+3. Fold Expressions
+4. Inline Variables
+5. Template Argument Deduction
+6. constexpr if
+7. std::any
+8. std::optional
+9. std::variant
+10. std::string_view
+11. Parallel Algorithms
+
+#### Features of the C++20
+
+1. Concepts
+2. Coroutines
+3. Modules
+4. Ranges
+5. Three-way Comparison
+6. Atomic Smart Pointers
+7. Designated Initializers
+8. Memory Model for Concurrency
+9. std::format
+10. std::span
+11. std::bit_cast
 
 ## 7. What is the ASCII table?
 
+The **ASCII** table is a table which contains codes for characters that can be used in text-based systems such as computers. It stands for American Standard Code for
+Information Interchange and contains 128 characters, including upper and lowercase letters, numbers, symbols, and special characters. It is the most widely
+used character encoding system.
+
 ## 8. What is Unicode?
 
+The **Unicode** is a computing industry standard for the most consistent encoding, representation, and handling of text expressed in most of the world's writing
+systems. It was created in 1991 and is maintained by Unicode Consortium. It is goal is to enable people around the world to use computers in any languages.
+
 ## 9. What are design patterns?
+
+**Design patterns** are reusable solutions to common problems in software design. The provide a way to structure code in a reusable, adaptive and
+maintainable way. Design patterns are used to simplify the design process and make code more efficient. The are often used to solve specific
+problem in an Object-oriented programming language.
 
 ## 10. What are the Singleton, Strategy, Template-Method, and Decorator?
 
