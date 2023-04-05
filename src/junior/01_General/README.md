@@ -39,6 +39,21 @@ typically in combination with *imperative* and *procedural programming*.
 
 ## 2. What is the complexity of algorithms?
 
+**The complexity of an algorithm** depends on the specific algorithm and it is implementation. Generally, algorithms are classified by their time complexity
+(how long it takes to run an algorithm) and space complexity (memory requirements of the algorithm). The complexity of an algorithm is typically denoted using
+*big-O notation*, which is a way of expressing the upper bound of an algorithm's running time. Big-O notation describes the complexity of an algorithm in terms
+of the number of operations it needs to perform. For example, an algorithm with a complexity of **O(n)** means that it will take `n` operations to complete.
+
+**Types of an algorithm complexity:**
+
+* **O(1):** Accessing a particular element in an collection, which requires only one operation.
+* **O(log n):** Binary search algorithm, which is more efficient that linear search by dividing the list in half with each iteration. 
+* **O(n):** Linear search algorithm, which compares each item in a list with the item being searched for.
+* **O(n + 1):** Bubble sort algorithm, which compares adjacent items and swap them if they are out of order.
+* **O(n + n):** Insertion sort algorithm, which inserts each item into it is correct position in the list.
+* **O(n * n):** Quicksort algorithm, which divides the list into two partitions and recursively sorts each partition.
+* **O(n ^ 2):** Selection sort algorithm, which loops throught the list to find the minimum item and swap it with the current item.
+
 ## 3. What if code is working incorrectly?
 
 ## 4. What are the Stack and Queue?
