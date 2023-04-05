@@ -131,11 +131,126 @@ systems. It was created in 1991 and is maintained by Unicode Consortium. It is g
 
 ## 9. What are design patterns?
 
+#### Design patterns
+
 **Design patterns** are reusable solutions to common problems in software design. The provide a way to structure code in a reusable, adaptive and
 maintainable way. Design patterns are used to simplify the design process and make code more efficient. The are often used to solve specific
 problem in an Object-oriented programming language.
 
+#### Types of the design patterns
+
+1. **Creational Patterns:** *Factory Method, Abstract Factory, Singleton, Builder, Prototype*
+2. **Structural Patterns:** *Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy*
+3. **Behavioral Patterns:** *Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor*
+
 ## 10. What are the Singleton, Strategy, Template-Method, and Decorator?
+
+#### Singleton
+
+A **Singleton** is a design pattern in which an object is instantiated only once, and all subsequent requests for the object return the same instance.
+
+```cpp
+class Singleton {
+private:
+    static Singleton* instance;
+
+protected:
+    Singleton() {};
+
+public:
+    static Singleton* getInstance();
+};
+
+// Get the only object available
+Singleton* Singleton::getInstance() {
+    if (instance == nullptr)
+        instance = new Singleton();
+
+    return instance;
+}
+```
+
+#### Strategy
+
+The **Strategy** pattern is a behavioral design pattern that enables an algorithm's behavior to be selected at runtime.
+
+```cpp
+class Strategy {
+public:
+    virtual int execute(int a, int b) = 0;
+};
+
+// Add class
+class Add : public Strategy {
+public:
+    int execute(int a, int b) {
+        std::cout << "Called Add's execute()" << std::endl;
+        return a + b;
+    }
+};
+```
+
+#### Template-Method
+
+The **Template-Method** pattern is a behavioral design pattern that defines the skeleton of an algorithm in the superclass but lets subclasses
+override specific steps of the algorithm without chaning its overall structure.
+
+```cpp
+class Template {
+public:
+    // Template method
+    void sort(int arr[], int n) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (compare(arr[j], arr[j + 1]) > 0) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+    }
+
+    // Hook method
+    virtual int compare(int a, int b) {
+        return 0;
+    }
+};
+```
+
+#### Decorator
+
+The **Decorator** pattern is a structural design pattern that allows behavior to be added to an existing object dynamically. It uses composition to extend the functionality
+of an object without using inheritance.
+
+```cpp
+class Component {
+public:
+    virtual void operation() = 0;
+};
+
+class ConcreteComponent : public Component {
+public:
+    void operation() {
+        std::cout << "ConcreteComponent operation" << std::endl;
+    }
+};
+
+class Decorator : public Component {
+private:
+    Component *component;
+
+public:
+    Decorator(Component *c) {
+        this->component = c;
+    }
+
+    void operation() {
+        if (component != nullptr)
+            component->operation();
+    }
+};
+```
 
 ## 11. What are modular tests for?
 
