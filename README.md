@@ -2,7 +2,7 @@
 
 [Techrocks](https://techrocks.ru/2021/04/08/400-cpp-interview-questions/) interview questions answers.
 
-## Table of content
+## Table of contents
 
 1. [Junior](https://github.com/JohnHiz/cxx_interview_questions/tree/main/src/junior)
     * [General questions](https://github.com/JohnHiz/cxx_interview_questions/tree/main/src/junior/01_General)

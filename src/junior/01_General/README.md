@@ -1,6 +1,6 @@
 # General questions
 
-## Table of content
+## Table of contents
 
 1. [General principles of OOP](#1-general-principles-of-oop)
 2. [What is the Complexity of Algorithms](#2-what-is-the-complexity-of-algorithms)
