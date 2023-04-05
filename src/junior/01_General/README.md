@@ -254,9 +254,55 @@ public:
 
 ## 11. What are modular tests for?
 
+Modular tests are automated tests  help to verify the correctness of individual functions or modules of code.
+Each test typically verifies a specific behavior of the code, such as the correct output or error handling. Writing modular
+tests helps developers ensure that their code is performing as expected and can help catch bugs early on in the development process.
+
+```cpp
+// Custom sorting function
+void sort(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+
+// Test
+int main() {
+    // Array to be sorted
+    int arr[] = {64, 34, 25, 12, 22, 11, 90};
+    int n = sizeof(arr)/sizeof(arr[0]);
+
+    sort(arr, n);
+
+    for (int i=0; i < n; i++)
+        std::cout << arr[i] << " ";
+
+    return 0;
+}
+```
+
 ## 12. What is the difference between Modular and Integration tests?
 
+#### Modular tests
+
+**Modular tests** are tests that are conducted on individual units or components of a system, such as a single class or method.
+These tests aim to verify the correctness and functionality of that individual unit or component.
+
+#### Integration tests
+
+**Integration tests** are tests that are conducted on multiple units or components of a system in order to verify the correctness
+and functionality of the entire system. These tests are conducted to ensure that all components interact with each other correctly.
+
 ## 13. What is TDD?
+
+**TDD** stands for `Test-Driven Development`, which is a software development process where unit tests are written before the code itself
+is written. This process allows developers to quickly and accurately determine if their code is working as expected.
 
 ## Footnotes
 
