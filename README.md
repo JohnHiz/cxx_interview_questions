@@ -1,5 +1,7 @@
 # C++ interview questions answers (WIP)
 
+![](https://progress-bar.dev/3?title=13%2F432) - *Number of completed questions*
+
 [Techrocks](https://techrocks.ru/2021/04/08/400-cpp-interview-questions/) interview questions answers.
 
 ## Table of contents
