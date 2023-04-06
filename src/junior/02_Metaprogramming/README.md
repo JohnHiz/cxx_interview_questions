@@ -16,7 +16,7 @@
 
 ## 16. Can a constructor be a template function?
 
-## 17. [Can a virtual function be a template?
+## 17. Can a virtual function be a template?
 
 ## 18. What is a template instantiation?
 
