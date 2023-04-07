@@ -12,6 +12,43 @@
 
 ## 14. What is a template class and a template function?
 
+#### Template class
+
+A template class is a generic class that serves as a blueprint for creating other classes and functions. Template classes can be used to
+create type-safe and generic functions and classes.
+
+```cpp
+template <class T>
+class MyClass
+{
+public:
+    T value;
+
+    MyClass(T val)
+    {
+        value = val;
+    }
+
+    T getValue()
+    {
+        return value;
+    }
+};
+```
+
+#### Template function
+
+A template function is a function that can be used to generate a specific version of a function or class based on the input parameters.
+Template functions are used to create type-safe and generic functions that can be reused with different data types.
+
+```cpp
+template <typename T>
+T add(T a, T b)
+{
+    return a + b;
+}
+```
+
 ## 15. What are constructors? What types do you know?
 
 ## 16. Can a constructor be a template function?
